@@ -6,7 +6,7 @@ from twisted.manhole import telnet
 
 from twisted.application import internet
 
-from bit.bot.common.interfaces import IPlugin, IApplication, IServices
+from bit.core.interfaces import IPlugin, IApplication, IServices
 
 from bit.bot.base.plugin import BotPlugin
 
