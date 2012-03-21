@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope">
+  
+  <shell-var
+     name="app"
+     factory=".shell.shellVarApp"
+     />   
+  
+  <shell-var
+     name="services"
+     factory=".shell.shellVarServices"
+     />   
+
+  <service
+      parent="bit.bot.shell"
+      name="shell"      
+      service="twisted.application.internet.TCPServer"
+      port=".shell.getShellPort"
+      factory=".shell.getShell"
+      />
+
+</configure>
+
