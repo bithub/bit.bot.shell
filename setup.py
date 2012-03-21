@@ -23,6 +23,12 @@ setup(name='bit.bot.shell',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'zope.interface',
+          'zope.component',
+          'zope.i8nmessageid',
+          'twisted',
+          'bit.core',
+          'bit.bot.common',
       ],
       entry_points="""
       # -*- Entry points: -*-
